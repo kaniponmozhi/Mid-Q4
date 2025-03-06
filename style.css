@@ -1,0 +1,301 @@
+
+
+.container {
+    font-family: 'Times New Roman', Times, serif;
+    display: grid;
+    width: 100vw; 
+    height: 100vh; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr 0.2fr; 
+    grid-template-areas:
+        "header header"
+        "profile profile"
+        "about about"
+        "publications publications"
+        "blogs blogs"
+        "achievements achievements"
+        "quotes quotes"
+        "footer footer";
+    gap: 10px;
+    padding: 10px;
+    background: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 15px 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    background-color: grey;
+    border-radius: 5px;
+}
+
+.header {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: lavender;
+    color: black;
+    padding: 20px;
+    border-radius: 5px;
+    grid-area: header;
+    width: 100%;
+}
+
+.profile-img {
+    width: 200px;
+    height: 250px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.profile-info {
+    display: grid;
+    align-content: center;
+    
+}
+
+.about, 
+.publications, 
+.blogs, 
+.achievements, 
+.quotes, 
+.archives, 
+.papers-project {
+    grid-column: span 2;
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.about,
+.publications, 
+.blogs, 
+.achievements, 
+.quotes{
+     background-color: lightpink; }
+
+.archives,
+.papers-project {
+     background-color: lightblue; text-align: center; }
+
+.publications ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.publications li {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+.publications li strong {
+    font-size: 1.2em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.publications li a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.publications li a:hover {
+    text-decoration: underline;
+}
+
+img {
+    display: block;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto 20px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.archives a, .papers-project a {
+    display: block;
+    margin-top: 5px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        font-family: 'Times New Roman', Times, serif;
+        display: grid;
+        width: 100vw; 
+        height: 100vh; 
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr 0.2fr; 
+        grid-template-areas:
+            "header header"
+            "profile profile"
+            "about about"
+            "publications publications"
+            "blogs blogs"
+            "achievements achievements"
+            "quotes quotes"
+            "footer footer";
+        gap: 10px;
+        padding: 10px;
+        background: white;
+    }
+    
+    .navbar {
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        padding: 10px 0;
+    }
+    
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+    
+    .navbar a:hover {
+        background-color: grey;
+        border-radius: 5px;
+    }
+    
+    .header {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        background-color: lavender;
+        color: black;
+        padding: 10px;
+        border-radius: 5px;
+        grid-area: header;
+        width: 100%;
+    }
+    
+    .profile-img {
+        width: 200px;
+        height: 250px;
+        display: block;
+        margin: 0 auto 20px;
+    }
+    
+    .profile-info {
+        display: grid;
+        align-content: center;
+        
+    }
+    
+    .about, 
+    .publications, 
+    .blogs, 
+    .achievements, 
+    .quotes, 
+    .archives, 
+    .papers-project {
+        grid-column: span 2;
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    
+    .about,
+    .publications, 
+    .blogs, 
+    .achievements, 
+    .quotes{
+         background-color: lightpink; }
+    
+    .archives,
+    .papers-project {
+         background-color: lightblue; text-align: center; }
+    
+    .publications ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .publications li {
+        background-color: white;
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    
+    
+    .publications li strong {
+        font-size: 1.2em;
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    .publications li a {
+        display: inline-block;
+        margin-top: 10px;
+        color: #0073e6;
+        text-decoration: none;
+    }
+    
+    .publications li a:hover {
+        text-decoration: underline;
+    }
+    
+    img {
+        display: block;
+        width: 250px;
+        height: 250px;
+        margin: 0 auto 20px;
+    }
+    
+    a {
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    .archives a, .papers-project a {
+        display: block;
+        margin-top: 5px;
+    }
+    
+    .footer {
+        grid-area: footer;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+    }
+}    
+
+
